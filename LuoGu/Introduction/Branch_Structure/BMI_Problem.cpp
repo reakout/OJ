@@ -5,8 +5,11 @@ int main() {
   cin >> m >> h;
   bmi = m / (h * h);
   if (bmi < 18.5)
-    cout << "UnderWeight" << endl;
-  if (bmi >= 18.5 && bmi < 25)
+    cout << "Underweight" << endl;
+  else if (bmi >= 18.5 && bmi < 25)
     cout << "Normal" << endl;
-  cout << bmi << endl << "Overweight"<<endl;
+  else
+    cout << bmi << endl << "Overweight" << endl;
+
+  return 0;
 }
